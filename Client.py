@@ -7,7 +7,7 @@ import UI
 
 
 def client_program(portnumber):
-    print("Hi")
+    #print("Hi")
     host = socket.gethostname()
     port = portnumber
     client_socket = socket.socket()
