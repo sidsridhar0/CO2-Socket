@@ -49,8 +49,8 @@ class ExtractCSV():
                 if 3 < count < 56:
                     sdict[r[0]] = r[1:52]
                 count += 1
-        #for bn, v in sdict.items():
-            #print(bn, v)
+        #for k, v in sdict.items():
+            #print(k, v)
         return sdict
 
 
@@ -193,7 +193,6 @@ def setupDB():
     #print(db.query_builder('numColumns'))
 
     for k, v in data.items():
-        # print(bn, v)
         temp = [k]
         temp.extend(v)
         # print(len(temp), temp)

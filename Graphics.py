@@ -25,7 +25,7 @@ class Graphic():
         plt.scatter(x, y)
         fit = np.polyfit(x, y, 1)
         func = np.poly1d(fit)
-        plt.plot(x, func(x), '--bn')
+        plt.plot(x, func(x), '--k')
         plt.xlabel(xname)
         plt.ylabel(yname)
         plt.title(name + " CO2 Graph")
